@@ -1,3 +1,4 @@
+import { Link } from 'expo-router';
 import * as SMS from 'expo-sms';
 import { Alert, Button, StyleSheet, View } from 'react-native';
 
@@ -41,6 +42,11 @@ return (
         title = 'Send SMS'
         onPress={()=>askToSend()}
         />
+      <Link href="./contacts" asChild>
+        <Button title = "Contacts"></Button>
+        
+      </Link>
+
     </View>
   </View>
       );
